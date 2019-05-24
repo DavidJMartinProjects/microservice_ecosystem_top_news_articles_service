@@ -7,12 +7,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import topnews.domain.NewsArticles;
 import topnews.service.TopNewsService;	
 
 @RestController
+@RequestMapping("/news")
 public class TopNewsControllerImpl implements TopNewsController {
 	
 	@Autowired
@@ -20,13 +22,13 @@ public class TopNewsControllerImpl implements TopNewsController {
 	
 	Logger logger = LoggerFactory.getLogger(TopNewsControllerImpl.class);	
 
-	@GetMapping("/")
+	@GetMapping("/articles")
 	public ResponseEntity<NewsArticles> getTopNewsArticles() {
 		logger.info("getTopNewsArticles() : recieved request for top ten news articles");
 		return topNewsService.getTopNewsArticles();
 	}
 	
-	@GetMapping("/titles")
+	@GetMapping("/headlines")
 	public ResponseEntity<Map<Integer, String>> getTopNewsTitles() {
 		logger.info("getTopNewsTitles() : recieved request for top ten news article titles");
 		return topNewsService.getTopNewsTitles();
