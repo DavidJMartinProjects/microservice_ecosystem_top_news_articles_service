@@ -1,0 +1,7 @@
+urls:
+   top-news-articles:
+      topNewsArticlesApiKey: dcf19cb61b47461f92d28a92d235c874 
+      topNewsArticlesApiUrl: https://newsapi.org/v2/top-headlines?country=ie&apiKey=dcf19cb61b47461f92d28a92d235c874
+  
+# example call for top stories from US 
+# https://newsapi.org/v2/top-headlines?country=ie&apiKey=dcf19cb61b47461f92d28a92d235c874

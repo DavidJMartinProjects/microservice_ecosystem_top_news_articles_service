@@ -1,0 +1,11 @@
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/domain/Articles.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/domain/Source.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/web/TopNewsControllerImpl.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/service/TopNewsServiceImpl.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/config/TopNewsConfig.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/business/TopNewsImpl.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/web/TopNewsController.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/business/TopNews.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/TopNewsApplication.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/service/TopNewsService.java
+/home/david/Documents/microservice-ecosystem/top-news/src/main/java/topnews/domain/NewsArticles.java
