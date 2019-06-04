@@ -8,5 +8,5 @@ import topnews.domain.NewsArticles;
 
 public interface TopNewsController {
 	ResponseEntity<NewsArticles> getTopNewsArticles();	
-	ResponseEntity<Map<Integer, String>> getTopNewsTitles();
+	ResponseEntity<Map<Integer, String>> getTopNewsHeadlines();
 }	

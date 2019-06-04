@@ -17,15 +17,16 @@ public class TopNewsServiceImpl implements TopNewsService {
 	@Autowired	
 	TopNews topNews;
 	
-	Logger logger = LoggerFactory.getLogger(TopNewsServiceImpl.class);	
+	private static Logger LOG = LoggerFactory.getLogger(TopNewsServiceImpl.class);	
 
 	@Override
 	public ResponseEntity<NewsArticles> getTopNewsArticles() {
-		logger.info("getTopNewsArticles() : recieved request for top ten news articles");
+		LOG.info("getTopNewsArticles() : recieved request for top ten news articles");
 		return topNews.getTopArticles();
 	}
 	
 	public ResponseEntity<Map<Integer, String>> getTopNewsTitles() {
+		LOG.info("getTopNewsTitles() : recieved request for top ten news titles");
 		return topNews.getArticleTitles();
 	}
 	

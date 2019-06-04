@@ -29,8 +29,8 @@ public class TopNewsControllerImpl implements TopNewsController {
 	}
 	
 	@GetMapping("/headlines")
-	public ResponseEntity<Map<Integer, String>> getTopNewsTitles() {
-		logger.info("getTopNewsTitles() : recieved request for top ten news article titles");
+	public ResponseEntity<Map<Integer, String>> getTopNewsHeadlines() {
+		logger.info("getTopNewsTitles() : recieved request for top ten news article headlines");
 		return topNewsService.getTopNewsTitles();
 	}
 
