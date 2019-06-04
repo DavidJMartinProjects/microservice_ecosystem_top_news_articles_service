@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: web:latest
+    build: https://github.com/DavidJMartinProjects/microservice_ecosystem_top_news_articles_service.git#master
+      
